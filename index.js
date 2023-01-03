@@ -17,3 +17,10 @@ function func1(value){
 }
 console.log(func1("func1です"));
 
+// アロー関数
+const func2 = (value) =>{
+    return value;
+}
+
+console.log(func2("func2です。"));
+
