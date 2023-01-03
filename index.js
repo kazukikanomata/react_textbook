@@ -138,3 +138,10 @@ const nameArr2 = nameArr1.map((name) => {
     return name;
 });
 console.log(nameArr2);
+
+// filter
+const newNumArr = arr2.filter((num) =>{
+    return num % 2 === 1;
+});
+
+console.log(newNumArr);
