@@ -168,3 +168,16 @@ const checkSumOver100 = (num1, num2) =>{
 };
 console.log(checkSumOver100(100, 200));
 console.log(checkSumOver100(0,3));
+
+// かつ　または
+const flag1 = true;
+const flag2 = false;
+
+// 右側がfalseなら右側を返す
+if (flag1 || flag2){
+    console.log("フラグのどちらかはtrueです。");
+}
+// 左側がtrueなら右側を返す
+if (flag1 && flag2){
+    console.log("フラグの両方がtrueです。");
+}
