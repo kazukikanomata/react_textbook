@@ -91,3 +91,18 @@ console.log(message3);
 // デフォルト値を＝で入れていく
 const sayHello = (your_name = 'ゲスト') => console.log(`こんにちは!${your_name}さん。`);
 sayHello();
+
+// スプレッド構文
+// console.log(...arr2);
+// 12345;
+const arr2 = [1,2,3,4,5];
+const[num1,num2, ...arr3] = arr2;
+console.log(num1);
+console.log(num2);
+console.log(arr3);
+// copy
+const arr4 = [10,20];
+const arr8 = [...arr4];
+arr8[0] = 100;
+console.log(arr4);
+console.log(arr8);
