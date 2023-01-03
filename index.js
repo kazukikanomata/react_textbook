@@ -124,3 +124,17 @@ const user ={
     age24,
 };
 console.log(user);
+// map関数
+// 従来のfor文を省略できる
+
+// 従来のfor文
+const nameArr1 = ["山田","田中","後藤"];
+// for(let i=0; i <  nameArr1.length; i++){
+//     console.log(nameArr1[i]);
+// }
+
+// map使用
+const nameArr2 = nameArr1.map((name) => {
+    return name;
+});
+console.log(nameArr2);
