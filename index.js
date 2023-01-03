@@ -49,3 +49,34 @@ const func5 = (val1, val2)=>(
     }
 )
 console.log(func5("kazuki", 24));
+
+// 分割代入
+// 従来の書き方
+// const myProfile = {
+//     name: "kazuki",
+//     age: 24,
+// };
+// const message1 = `私の名前は${myProfile.name}です。年齢は${myProfile.age}歳です。`;
+// console.log(message1);
+
+// オブジェクト分割代入
+const myProfile = {
+    name2: "kazuki",
+    age1: 24,
+};
+const {name2, age1} = myProfile;
+const message1 = `私の名前は${name2}です。年齢は${age1}歳です。`;
+
+// 抽出したプロパティの別の名前をつける
+const myProfile1 = {
+    name2: "fuog",
+    age1: 25,
+};
+const {name2: newName, age1: newAge} = myProfile1;
+const message2 = `私の名前は${newName}です。年齢は${newAge}歳です。`;
+console.log(message2);
+
+const yourProfile = ["azuki", 32];
+const [name3, age3] = yourProfile;
+const message3 = `私の名前は${name3}です。年齢は${age3}歳です`;
+console.log(message3);
