@@ -145,3 +145,26 @@ const newNumArr = arr2.filter((num) =>{
 });
 
 console.log(newNumArr);
+
+// 3項演算子
+// ある条件? trueの時の処理 : 条件がfalseの時の処理
+
+// まる1
+const val1 = 1 > 0 ? "trueです。": "falseです。";
+console.log(val1);
+
+// まる2
+// 変数系の型を判定してくれる　typeof
+const printFormattedNum = (num) => {
+    const formattedNum = typeof num === "number" ? num.toLocaleString(): "数値を入力してください";
+    console.log(formattedNum);
+};
+printFormattedNum(1300);
+printFormattedNum("1300");
+
+// まる3
+const checkSumOver100 = (num1, num2) =>{
+    return num1 + num2 > 100 ? "100を超えています": "許容範囲内です";
+};
+console.log(checkSumOver100(100, 200));
+console.log(checkSumOver100(0,3));
