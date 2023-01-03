@@ -80,3 +80,14 @@ const yourProfile = ["azuki", 32];
 const [name3, age3] = yourProfile;
 const message3 = `私の名前は${name3}です。年齢は${age3}歳です`;
 console.log(message3);
+
+// デフォルト値
+// オブジェクトの時でも使える
+// const sayHello = (your_name) => console.log(`こんにちは!${your_name}さん。`);
+
+// これはundefinedさんになってしまう。
+// sayHello();
+
+// デフォルト値を＝で入れていく
+const sayHello = (your_name = 'ゲスト') => console.log(`こんにちは!${your_name}さん。`);
+sayHello();
