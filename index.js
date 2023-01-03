@@ -10,3 +10,10 @@ const first_name = "kazuki";
 const age = 24;
 const message = `私の名前は${first_name}です。年齢は${age}です。`;
 console.log(message);
+
+// 従来の関数
+function func1(value){
+    return value;
+}
+console.log(func1("func1です"));
+
