@@ -106,3 +106,21 @@ const arr8 = [...arr4];
 arr8[0] = 100;
 console.log(arr4);
 console.log(arr8);
+
+// オブジェクト省略表記ほう
+
+// const name = "山田";
+// const age24 = 24;
+// const user ={
+//     name: name,
+//     age: age,
+// };
+// console.log(user);
+
+const name = "山田";
+const age24 = 24;
+const user ={
+    name,
+    age24,
+};
+console.log(user);
